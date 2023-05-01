@@ -85,9 +85,11 @@ def get_arguments():
 
     # examples: /Users/sjoerd.van.den.bos/tmp/wikiseriessjoerd
     parser.add_argument('--name', '-n',
+                        help='Name of the series to retrieve.',
                         type=str,
                         required=True)
     parser.add_argument('--path', '-p',
+                        help='Path to save the series data. This can be relative.',
                         default='.',
                         type=str,
                         required=False)
